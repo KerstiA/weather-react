@@ -1,0 +1,18 @@
+.weather-temperature img {
+  margin-right: 5px;
+  height: 90px;
+  width: 90px;
+}
+#temperature {
+  font-size: 70px;
+  margin-bottom: 25px;
+}
+.float {
+  font-size: 25px;
+  margin-top: 0;
+}
+.weather-temperature .active {
+  text-decoration: none;
+  color: black;
+  cursor: default;
+}

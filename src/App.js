@@ -1,25 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+import App from "./App.css";
+import Weather from "./Weather.js";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="container">
+        <div className="weather">
+          <h3>11/12/2020</h3>
+          <br />
+          <h2>
+            <i className="fas fa-map-marker-alt"></i> <span>Raasiku</span>
+          </h2>
+          <br />
+          <Weather />
+          <Search />
+          <br />
+          <div className="name">
+            <p>
+              <small>
+                <a href="https://github.com/KerstiA/FreshWeatherApp">
+                  Open-source code-
+                </a>
+                by Kersti Allikvee.
+              </small>
+            </p>
+          </div>
+        </div>
+        <Forecast />
+      </div>
     </div>
   );
 }
-
-export default App;
+const rootElement = document.getElementById("root");
+ReactDOM.render(<App />, rootElement);
